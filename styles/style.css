@@ -48,8 +48,6 @@ ol {
   justify-content: center;
   gap: 30px;
   inline-size: 1140px;
-
-
 }
 
 .search-form {
@@ -94,6 +92,7 @@ ol {
   object-fit: cover;
   object-position: center;
 }
+
 .title {
   font-size: 75px;
   font-weight: bold;
@@ -148,7 +147,9 @@ ol {
   text-transform: uppercase;
   padding: 0 0 0 2px;
   line-height: 1;
-  hyphens: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -157,6 +158,8 @@ ol {
   line-height: 23px;
   padding: 0 0 0 2px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -215,14 +218,13 @@ ol {
   font-family: inherit;
   font-weight: inherit;
   font-size: 18px;
-  inline-size:225px;
+  inline-size: 225px;
   appearance: none;
   color: #fff;
 }
 
 .search-form__textfield:active {
   outline: 1px solid #FFF;
-  border: none;
 }
 
 .search-form__textfield:focus {
